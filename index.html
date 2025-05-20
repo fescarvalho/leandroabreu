@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrossel - Leandro Abreu Contabilidade</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="./img/LOGO.png" alt="Logo" />
+      <div class="nav-links">
+        <a href="#inicio" class="active">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </div>
+
+    <div class="carousel" id="inicio">
+      <div class="slides" id="slides">
+        <div class="slide active" style="background-image: url('./img/home.jpg')">
+          <h1>Atendimento Personalizado</h1>
+          <p>Cada cliente recebe atenção exclusiva para suas necessidades específicas.</p>
+          <div class="buttons">
+            <button class="btn-yellow" onclick="goToSlide(0, true)">Fale Conosco</button>
+            <button class="btn-outline-yellow" onclick="goToSlide(0, true)">
+              Nossos Serviços
+            </button>
+          </div>
+        </div>
+        <div class="slide" style="background-image: url('./img/imagem2.jpg')">
+          <h1>Excelência Contábil</h1>
+          <p>Soluções contábeis inteligentes para empresas de todos os tamanhos.</p>
+          <div class="buttons">
+            <button class="btn-yellow" onclick="goToSlide(1, true)">
+              Agendar Consulta
+            </button>
+            <button class="btn-outline-yellow" onclick="goToSlide(1, true)">
+              Saiba Mais
+            </button>
+          </div>
+        </div>
+        <div class="slide" style="background-image: url('./img/imagem3.jpg')">
+          <h1>Confiança e Eficiência</h1>
+          <p>Trabalhamos com transparência para garantir sua tranquilidade fiscal.</p>
+          <div class="buttons">
+            <button class="btn-yellow" onclick="goToSlide(2, true)">
+              Entre em Contato
+            </button>
+            <button class="btn-outline-yellow" onclick="goToSlide(2, true)">
+              Ver Detalhes
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="dots">
+        <div class="dot active" onclick="goToSlide(0, true)"></div>
+        <div class="dot" onclick="goToSlide(1, true)"></div>
+        <div class="dot" onclick="goToSlide(2, true)"></div>
+      </div>
+    </div>
+
+    <section id="sobre">
+      <div class="sobre-container">
+        <div class="sobre-imagem">
+          <img src="./img/Sobre.png" alt="Leandro Abreu - Contador" />
+        </div>
+        <div class="sobre-conteudo">
+          <h4>Conheça Nosso Contador</h4>
+          <h2>Leandro Abreu</h2>
+          <p>
+            Com mais de 15 anos de experiência no mercado contábil, Leandro Abreu é
+            especialista em soluções fiscais e tributárias para empresas de todos os
+            portes. Sua abordagem personalizada garante que cada cliente receba o melhor
+            atendimento e as estratégias mais eficientes para seu negócio.
+          </p>
+          <ul class="qualificacoes">
+            <li>Mais de 15 anos de experiência no mercado</li>
+            <li>Especialista em contabilidade tributária</li>
+            <li>Membro do Conselho Regional de Contabilidade</li>
+            <li>MBA em Gestão Financeira</li>
+            <li>Atendimento personalizado para cada cliente</li>
+            <li>Atualização constante sobre legislação fiscal</li>
+          </ul>
+          <button class="botao-consulta">Agendar Consulta</button>
+        </div>
+      </div>
+    </section>
+    <section id="contato"></section>
+    <script src="./script.js"></script>
+  </body>
+</html>
