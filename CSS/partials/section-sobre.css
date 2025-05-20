@@ -1,0 +1,69 @@
+/* 
+SOBRE */
+
+.sobre-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0% 20%;
+  background-color: #1a1a1a;
+  font-family: Arial, sans-serif;
+}
+.sobre-imagem {
+  flex: 1;
+  padding-right: 2em;
+}
+.sobre-imagem img {
+  width: 400px;
+  border-radius: 12px;
+
+  /*  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+}
+.sobre-conteudo {
+  flex: 1;
+}
+.sobre-conteudo h4 {
+  color: #c49c00;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.sobre-conteudo h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.sobre-conteudo p {
+  line-height: 1.6;
+  margin-bottom: 1.5em;
+}
+.qualificacoes {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2em;
+}
+.qualificacoes li {
+  margin-bottom: 0.8em;
+  padding-left: 1.5em;
+  position: relative;
+}
+.qualificacoes li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: #ffc800;
+}
+.botao-consulta {
+  background-color: #ffc800;
+  border: none;
+  padding: 1em 2em;
+  font-size: 1em;
+  font-weight: bold;
+  color: #000;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.botao-consulta:hover {
+  background-color: #e6b800;
+}
