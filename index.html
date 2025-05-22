@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrossel - Leandro Abreu Contabilidade</title>
     <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+    />
   </head>
   <body>
     <div class="header">
@@ -61,75 +65,7 @@
         <div class="dot" onclick="goToSlide(2, true)"></div>
       </div>
     </div>
-    <!-- Serviços -->
-    <section class="servicos" id="servicos">
-      <div class="container">
-        <h4 class="subtitulo">Nossos Serviços</h4>
-        <h2 class="titulo">Soluções <span class="destaque">Contábeis Completas</span></h2>
 
-        <div class="cards-grid">
-          <!-- Card 1 -->
-          <div class="card">
-            <div class="icone">📊</div>
-            <h3 class="card-titulo">Contabilidade Empresarial</h3>
-            <p>
-              Serviços completos de contabilidade para empresas de todos os portes,
-              garantindo conformidade e precisão.
-            </p>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="card">
-            <div class="icone">📈</div>
-            <h3 class="card-titulo">Consultoria Fiscal</h3>
-            <p>
-              Planejamento tributário estratégico para reduzir legalmente a carga fiscal
-              da sua empresa.
-            </p>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="card">
-            <div class="icone">👤</div>
-            <h3 class="card-titulo">Departamento Pessoal</h3>
-            <p>
-              Gestão completa de folha de pagamento, admissões, demissões e obrigações
-              trabalhistas.
-            </p>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="card">
-            <div class="icone">🏢</div>
-            <h3 class="card-titulo">Abertura de Empresas</h3>
-            <p>
-              Assessoria completa para abertura, alteração ou encerramento de empresas com
-              agilidade.
-            </p>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="card">
-            <div class="icone">💰</div>
-            <h3 class="card-titulo">Imposto de Renda</h3>
-            <p>
-              Declaração de imposto de renda para pessoas físicas e jurídicas com máxima
-              economia legal.
-            </p>
-          </div>
-
-          <!-- Card 6 -->
-          <div class="card">
-            <div class="icone">📄</div>
-            <h3 class="card-titulo">Assessoria Contábil</h3>
-            <p>
-              Consultoria especializada para tomada de decisões estratégicas baseadas em
-              dados financeiros.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- Sobre -->
     <section class="sobre" id="sobre">
       <div class="sobre-container">
@@ -158,6 +94,33 @@
       </div>
     </section>
 
+    <!-- Serviços -->
+    <section class="servicos" id="servicos">
+      <div class="servicos-text">
+        <h1>Lorem ipsum</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto omnis vitae
+          ipsum eaque laboriosam deleniti rerum voluptatum dolorum suscipit amet velit,
+          modi numquam quam sit molestias, doloribus quis mollitia minus!
+        </p>
+      </div>
+
+      <div class="carrossel-servicos">
+        <div class="carrossel-track">
+          <div class="cardC"></div>
+          <div class="cardC"></div>
+          <div class="cardC"></div>
+          <div class="cardC"></div>
+          <div class="cardC"></div>
+          <div class="cardC"></div>
+        </div>
+
+        <div class="buttons-car">
+          <button class="prev"></button>
+          <button class="next"></button>
+        </div>
+      </div>
+    </section>
     <!-- Depoimentos -->
     <section class="depoimentos" id="depoimentos">
       <p class="subtitulo">Depoimentos</p>
@@ -269,7 +232,8 @@
       </div>
     </footer>
 
-    <script src="./JS/carrossel-topo.js"></script>
-    <script src="./JS/carrossel-comentarios.js"></script>
+    <script defer src="./JS/carrossel-topo.js"></script>
+    <script defer src="./JS/carrossel-services.js"></script>
+    <script defer src="./JS/carrossel-comentarios.js"></script>
   </body>
 </html>
